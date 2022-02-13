@@ -6,7 +6,7 @@ This code runs on an ESP32 dev board. It reads the ambient temperature from open
 Change the "xxxx" values in the code according to your setup so it can connect to your Wi-Fi and access the openweathermap.org API.
 The external temperature probe parameters and compensation curves are as calculated in the spreadsheet.
 
-The four digital outputs drive normally closed relay contacts. These relay contacts shoule be wired in series, with resistor values 15R, 33R, 60R and 120R across contacts 1-4 respectively. This forms a primitive 4-bit converter. Put a 733R (3x 2k2 in parallel) resisitor in series to mimic an Alpha InTec external temperature probe.
+The four digital outputs drive normally closed relay contacts. These relay contacts should be wired in series, with resistor values 15R, 33R, 60R and 120R across contacts 1-4 respectively. This forms a primitive 4-bit converter. Put a 733R (3x 2k2 in parallel) resisitor in series to mimic an Alpha InTec external temperature probe.
 
 An optional themistor on the analogue input will allow you to monitor the flow temperature via the web interface.
 
