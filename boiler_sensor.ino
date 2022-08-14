@@ -135,7 +135,7 @@ void setup() {
     pinMode(RELAY_4_PIN, OUTPUT);
 
 
-// Create thermistor oject
+// Create thermistor object
     thermistor = new NTC_Thermistor(
     SENSOR_PIN,
     REFERENCE_RESISTANCE,
@@ -249,7 +249,7 @@ byte CalculateCompensation() {
 
   // Find nearest compensation threshold
   int i = 0;
-  while (( i < MAP_COUNT ) && ( external_temp > threshold[ i ] )) {
+  while (( i < MAP_COUNT-1 ) && ( external_temp > threshold[ i ] )) {
     i++;
   }
   byte output = mapping[ i ];
